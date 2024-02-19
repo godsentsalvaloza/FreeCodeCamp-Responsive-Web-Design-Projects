@@ -1,0 +1,43 @@
+* {
+  font-family: Arial;
+}
+main {
+  margin: 10px 30px;
+  background-color: #e6e6e6;
+  padding: 5px 15px;
+}
+#image-wrapper {
+  background-color: white;
+}
+h1 {
+  text-align: center;
+  font-size: 35px;
+  margin-bottom: 0;
+}
+p#title-description {
+  text-align: center;
+  margin-top: 5px;
+  font-size: 15px;
+}
+figcaption {
+  text-align: center;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+h2 {
+  text-align: center;
+}
+div#tribute-info {
+  margin: 10px 120px;
+}
+p#tribute-text {
+  text-align: center;
+  font-weight: bold;
+}
+img {
+  display: block;
+  height: auto;
+  margin: auto;
+  max-width: 100%;
+}

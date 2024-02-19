@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Enrollment Form</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="styles.css" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  </head>
+
+  <body>
+    <div id="container">
+      <header class="header">
+        <h1 id="title">Enrollment Form</h1>
+        <p id="description">Please fill-out the following informations.</p>
+      </header>
+
+      <main>
+        <section>
+          <form id="survey-form">
+            <div class="form-group">
+              <label for="name" id="name-label">Name</label>
+              <input
+                type="name"
+                required
+                id="name"
+                placeholder="Enter your name"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email" id="email-label">Email</label>
+              <input
+                type="email"
+                required
+                id="email"
+                placeholder="Enter your email"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="number" id="number-label"
+                >Age <span>(optimal)</span></label
+              >
+              <input
+                type="number"
+                id="number"
+                min="16"
+                max="60"
+                placeholder="Enter your age"
+              />
+            </div>
+
+            <div class="form-group">
+              <p id="gender-text">Gender</p>
+              <label for="gender-male">
+                <input
+                  type="radio"
+                  id="gender-male"
+                  name="gender"
+                  value="male"
+                  class="input-radio"
+                />
+                Male
+              </label>
+              <br />
+              <label for="gender-female">
+                <input
+                  type="radio"
+                  id="gender-female"
+                  name="gender"
+                  value="female"
+                  class="input-radio"
+                />
+                Female</label
+              >
+              <br />
+              <label for="gender-other">
+                <input
+                  type="radio"
+                  id="gender-other"
+                  name="gender"
+                  value="other"
+                  class="input-radio"
+                />
+                Other</label
+              >
+            </div>
+            <br />
+            <div class="form-group">
+              <label for="dropdown">Grade Level</label>
+              <br />
+              <select id="dropdown" required>
+                <option>Select an option</option>
+                <option>Grade 10</option>
+                <option>Grade 9</option>
+                <option>Grade 8</option>
+                <option>Grade 7</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <p id="special-indicator">
+                Special consideration <span>(optimal)</span>
+              </p>
+              <label for="check-one">
+                <input
+                  type="checkbox"
+                  id="check-one"
+                  value="PWD"
+                  class="checkbox-input"
+                />
+                Person with Disability</label
+              >
+              <br />
+              <label for="check-two">
+                <input
+                  type="checkbox"
+                  id="check-two"
+                  value="low-income"
+                  class="checkbox-input"
+                />
+
+                Lower income family</label
+              >
+            </div>
+            <br />
+            <div class="form-group">
+              <label for="text">Other concerns <span>(optimal)</span></label>
+              <textarea
+                id="text"
+                placeholder="Enter your text here..."
+              ></textarea>
+            </div>
+
+            <div class="form-group">
+              <input type="submit" id="submit" value="Submit" />
+            </div>
+          </form>
+          <br />
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
